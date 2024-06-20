@@ -32,3 +32,8 @@
 *.app
 
 *.vs
+*.tlog
+*.ilk
+*.idb
+*.pdb
+*.lastbuildstate
