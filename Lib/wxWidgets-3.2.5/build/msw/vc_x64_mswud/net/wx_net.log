@@ -14,4 +14,4 @@
   webrequest.cpp
   webrequest_winhttp.cpp
   webrequest_curl.cpp
-  wx_net.vcxproj -> F:\wxWidgets-3.2.5\lib\vc_x64_lib\wxbase32ud_net.lib
+  wx_net.vcxproj -> C:\Users\tutha\source\repos\A-mini-Dictionary\Lib\wxWidgets-3.2.5\lib\vc_x64_lib\wxbase32ud_net.lib

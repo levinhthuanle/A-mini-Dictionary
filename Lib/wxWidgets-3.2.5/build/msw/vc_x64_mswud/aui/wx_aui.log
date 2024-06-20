@@ -10,4 +10,4 @@
   tabartmsw.cpp
   barartmsw.cpp
   xh_aui.cpp
-  wx_aui.vcxproj -> F:\wxWidgets-3.2.5\lib\vc_x64_lib\wxmsw32ud_aui.lib
+  wx_aui.vcxproj -> C:\Users\tutha\source\repos\A-mini-Dictionary\Lib\wxWidgets-3.2.5\lib\vc_x64_lib\wxmsw32ud_aui.lib

@@ -10,4 +10,4 @@
   richtextsymboldlg.cpp
   richtextxml.cpp
   xh_richtext.cpp
-  wx_richtext.vcxproj -> F:\wxWidgets-3.2.5\lib\vc_x64_lib\wxmsw32ud_richtext.lib
+  wx_richtext.vcxproj -> C:\Users\tutha\source\repos\A-mini-Dictionary\Lib\wxWidgets-3.2.5\lib\vc_x64_lib\wxmsw32ud_richtext.lib

@@ -13,4 +13,4 @@
   trees.c
   uncompr.c
   zutil.c
-  wx_wxzlib.vcxproj -> F:\wxWidgets-3.2.5\lib\vc_x64_lib\wxzlibd.lib
+  wx_wxzlib.vcxproj -> C:\Users\tutha\source\repos\A-mini-Dictionary\Lib\wxWidgets-3.2.5\lib\vc_x64_lib\wxzlibd.lib

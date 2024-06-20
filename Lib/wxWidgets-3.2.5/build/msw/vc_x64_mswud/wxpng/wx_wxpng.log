@@ -18,4 +18,4 @@
   palette_neon_intrinsics.c
   intel_init.c
   filter_sse2_intrinsics.c
-  wx_wxpng.vcxproj -> F:\wxWidgets-3.2.5\lib\vc_x64_lib\wxpngd.lib
+  wx_wxpng.vcxproj -> C:\Users\tutha\source\repos\A-mini-Dictionary\Lib\wxWidgets-3.2.5\lib\vc_x64_lib\wxpngd.lib

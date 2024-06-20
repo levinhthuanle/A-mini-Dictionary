@@ -7,4 +7,4 @@
   propgridiface.cpp
   propgridpagestate.cpp
   props.cpp
-  wx_propgrid.vcxproj -> F:\wxWidgets-3.2.5\lib\vc_x64_lib\wxmsw32ud_propgrid.lib
+  wx_propgrid.vcxproj -> C:\Users\tutha\source\repos\A-mini-Dictionary\Lib\wxWidgets-3.2.5\lib\vc_x64_lib\wxmsw32ud_propgrid.lib

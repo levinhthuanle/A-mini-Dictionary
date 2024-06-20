@@ -44,4 +44,4 @@
   jquant1.c
   jquant2.c
   jutils.c
-  wx_wxjpeg.vcxproj -> F:\wxWidgets-3.2.5\lib\vc_x64_lib\wxjpegd.lib
+  wx_wxjpeg.vcxproj -> C:\Users\tutha\source\repos\A-mini-Dictionary\Lib\wxWidgets-3.2.5\lib\vc_x64_lib\wxjpegd.lib

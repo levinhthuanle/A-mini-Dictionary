@@ -1,4 +1,4 @@
 ﻿  xmlparse.c
   xmlrole.c
   xmltok.c
-  wx_wxexpat.vcxproj -> F:\wxWidgets-3.2.5\lib\vc_x64_lib\wxexpatd.lib
+  wx_wxexpat.vcxproj -> C:\Users\tutha\source\repos\A-mini-Dictionary\Lib\wxWidgets-3.2.5\lib\vc_x64_lib\wxexpatd.lib

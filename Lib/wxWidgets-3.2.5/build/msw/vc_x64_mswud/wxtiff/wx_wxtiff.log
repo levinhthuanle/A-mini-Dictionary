@@ -39,4 +39,4 @@
   tif_write.c
   tif_zip.c
   tif_zstd.c
-  wx_wxtiff.vcxproj -> F:\wxWidgets-3.2.5\lib\vc_x64_lib\wxtiffd.lib
+  wx_wxtiff.vcxproj -> C:\Users\tutha\source\repos\A-mini-Dictionary\Lib\wxWidgets-3.2.5\lib\vc_x64_lib\wxtiffd.lib

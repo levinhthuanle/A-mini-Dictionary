@@ -140,4 +140,4 @@
   ViewStyle.cxx
   WordList.cxx
   XPM.cxx
-  wx_wxscintilla.vcxproj -> F:\wxWidgets-3.2.5\lib\vc_x64_lib\wxscintillad.lib
+  wx_wxscintilla.vcxproj -> C:\Users\tutha\source\repos\A-mini-Dictionary\Lib\wxWidgets-3.2.5\lib\vc_x64_lib\wxscintillad.lib

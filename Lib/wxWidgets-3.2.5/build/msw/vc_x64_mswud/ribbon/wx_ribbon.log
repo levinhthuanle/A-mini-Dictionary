@@ -10,4 +10,4 @@
   panel.cpp
   toolbar.cpp
   xh_ribbon.cpp
-  wx_ribbon.vcxproj -> F:\wxWidgets-3.2.5\lib\vc_x64_lib\wxmsw32ud_ribbon.lib
+  wx_ribbon.vcxproj -> C:\Users\tutha\source\repos\A-mini-Dictionary\Lib\wxWidgets-3.2.5\lib\vc_x64_lib\wxmsw32ud_ribbon.lib

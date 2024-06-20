@@ -3,4 +3,4 @@
   ScintillaWX.cpp
   stc.cpp
   xh_styledtextctrl.cpp
-  wx_stc.vcxproj -> F:\wxWidgets-3.2.5\lib\vc_x64_lib\wxmsw32ud_stc.lib
+  wx_stc.vcxproj -> C:\Users\tutha\source\repos\A-mini-Dictionary\Lib\wxWidgets-3.2.5\lib\vc_x64_lib\wxmsw32ud_stc.lib

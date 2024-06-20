@@ -25,4 +25,4 @@
   pcre2_valid_utf.c
   pcre2_xclass.c
   pcre2_chartables.c
-  wx_wxregex.vcxproj -> F:\wxWidgets-3.2.5\lib\vc_x64_lib\wxregexud.lib
+  wx_wxregex.vcxproj -> C:\Users\tutha\source\repos\A-mini-Dictionary\Lib\wxWidgets-3.2.5\lib\vc_x64_lib\wxregexud.lib

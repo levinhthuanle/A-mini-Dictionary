@@ -4,4 +4,4 @@
   webviewfshandler.cpp
   webview_ie.cpp
   webview_edge.cpp
-  wx_webview.vcxproj -> F:\wxWidgets-3.2.5\lib\vc_x64_lib\wxmsw32ud_webview.lib
+  wx_webview.vcxproj -> C:\Users\tutha\source\repos\A-mini-Dictionary\Lib\wxWidgets-3.2.5\lib\vc_x64_lib\wxmsw32ud_webview.lib
