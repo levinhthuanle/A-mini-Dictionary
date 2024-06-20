@@ -1,0 +1,15 @@
+Go to Project -> Properties. 
+Configuration: All configurations
+Platform: x64
+
+# Step 1: Go to C/C++
+Additional Include Directories
+Add 2 folder: 
+- Dictionary\Lib\wxWidgets-3.2.5\include
+- Dictionary\Lib\wxWidgets-3.2.5\include\msvc
+
+# Step 2: Go to Linker > System
+- Change the SubSystem from Console to Window
+
+# Step 3: Go to Linker > General
+- Additional Library Directories: Add Dictionary\Lib\wxWidgets-3.2.5\lib\vc_x64_lib

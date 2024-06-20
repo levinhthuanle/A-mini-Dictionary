@@ -1,0 +1,4 @@
+﻿  dummy.cpp
+  glcmn.cpp
+  glcanvas.cpp
+  wx_gl.vcxproj -> F:\wxWidgets-3.2.5\lib\vc_x64_lib\wxmsw32u_gl.lib
