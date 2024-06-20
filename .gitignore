@@ -39,3 +39,7 @@
 *.lastbuildstate
 *.recipe
 *.log
+
+#But not building result in the wxWidget library
+!Lib/wxWidgets-3.2.5/lib/vc_x64_lib/*.lib
+!Lib/wxWidgets-3.2.5/lib/vc_x64_lib/*.pdb
