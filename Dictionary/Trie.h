@@ -3,10 +3,10 @@
 #include <vector>
 #include <string>
 #include <unordered_map>
-
+#include <xutility>
 class TrieNode {
 public:
-    TrieNode* children[26];
+    TrieNode* children[96];
     std::vector<std::string> definitions;
 
     TrieNode();
@@ -14,7 +14,8 @@ public:
 
 class Trie {
 private:
-    TrieNode* root;
+    TrieNode* root = 0;
+    void clear(TrieNode*&); 
 public:
     Trie() {
         root = new TrieNode();
@@ -23,4 +24,6 @@ public:
     void insert(const std::string& word, const std::string& definition);
 
     std::vector<std::string> search(const std::string& word);
+
+    void clear(); 
 };
