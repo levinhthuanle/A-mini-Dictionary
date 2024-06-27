@@ -4,6 +4,7 @@
 #include <string>
 #include <unordered_map>
 #include <xutility>
+#include <stack>
 class TrieNode {
 public:
     TrieNode* children[96];
@@ -26,4 +27,7 @@ public:
     std::vector<std::string> search(const std::string& word);
 
     void clear(); 
+
+    void remove(const std::string& word); 
+
 };
