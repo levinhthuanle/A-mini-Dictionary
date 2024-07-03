@@ -10,17 +10,21 @@ public:
     std::vector<std::string> definitions;
 
     TrieNode();
+    ~TrieNode(); 
 };
 
 class Trie {
 private:
     TrieNode* root;
+    void deleteNode(TrieNode* node); 
+
 public:
-    Trie() {
-        root = new TrieNode();
-    }
+    Trie();
+    ~Trie(); 
 
     void insert(const std::string& word, const std::string& definition);
 
     std::vector<std::string> search(const std::string& word);
+
+    void readData();
 };
