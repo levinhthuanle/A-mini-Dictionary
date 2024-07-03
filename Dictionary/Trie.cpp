@@ -1,13 +1,39 @@
 #include "Trie.h"
 
-// -TrieNode
+
 TrieNode::TrieNode(){
     std::fill(std::begin(children), std::end(children), nullptr); 
 }
 
-// -Trie
+TrieNode::~TrieNode() {
+    for (int i = 0; i < 26; ++i) {
+        if (children[i]) {
+            delete children[i];
+            children[i] = nullptr;
+        }
+    }
+}
 
-void Trie::insert(const std::string& word, const std::string& definition){
+Trie::Trie() {
+    root = new TrieNode();
+}
+
+Trie::~Trie() {
+    deleteNode(root);
+}
+
+void Trie::deleteNode(TrieNode* node) {
+    if (!node) return;
+
+    for (int i = 0; i < 26; ++i) {
+        if (node->children[i]) {
+            deleteNode(node->children[i]);
+        }
+    }
+    delete node;
+}
+
+void Trie::insert(const std::string& word, const std::string& definition) {
     TrieNode* node = root;
     for (char c : word) {
         int index = c - ' ';
@@ -19,7 +45,7 @@ void Trie::insert(const std::string& word, const std::string& definition){
     node->definitions.push_back(definition);
 }
 
-std::vector<std::string> Trie::search(const std::string& word){
+std::vector<std::string> Trie::search(const std::string& word) {
     TrieNode* node = root;
     for (char c : word) {
         int index = c - ' ';
@@ -30,6 +56,7 @@ std::vector<std::string> Trie::search(const std::string& word){
     }
     return node->definitions;
 }
+
 
 void Trie::clear(TrieNode*& curr)
 {
@@ -81,3 +108,4 @@ void Trie::remove(const std::string& word)
 	return;
 
 }
+

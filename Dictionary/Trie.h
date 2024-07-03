@@ -11,6 +11,7 @@ public:
     std::vector<std::string> definitions;
 
     TrieNode();
+    ~TrieNode(); 
 };
 
 class Trie {
@@ -18,16 +19,18 @@ private:
     TrieNode* root = 0;
     void clear(TrieNode*&); 
 public:
-    Trie() {
-        root = new TrieNode();
-    }
+    Trie();
+    ~Trie(); 
 
     void insert(const std::string& word, const std::string& definition);
 
     std::vector<std::string> search(const std::string& word);
 
+
+    void readData();
     void clear(); 
 
     void remove(const std::string& word); 
 
 };
+
