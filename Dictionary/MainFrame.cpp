@@ -1,37 +1,30 @@
 #include "MainFrame.h"
+#include "GameFrame.h"
+
+// Define an ID for the button
+const int ID_OpenGameButton = 1001;
+
+wxBEGIN_EVENT_TABLE(MainFrame, BaseFrame)
+EVT_BUTTON(ID_OpenGameButton, MainFrame::OnOpenGameFrame)
+wxEND_EVENT_TABLE()
 
 MainFrame::MainFrame(const wxString& title)
-    : wxFrame(nullptr, wxID_ANY, title, wxDefaultPosition, wxSize(WIDTH, HEIGHT), wxDEFAULT_FRAME_STYLE & ~(wxRESIZE_BORDER | wxMAXIMIZE_BOX)) {
-    SetSize(wxSize(WIDTH, HEIGHT));
+    : BaseFrame(title, wxSize(WIDTH, HEIGHT)) {
 
-    wxPanel* panel = new wxPanel(this);
-    panel->SetBackgroundColour(WHITE);
+    //wxPanel* panel = new wxPanel(this);
+    //panel->SetBackgroundColour(WHITE);
 
-    wxInitAllImageHandlers();
+    ////// Create and position the button
+    ////wxButton* openGameButton = new wxButton(panel, ID_OpenGameButton, wxT("Open Game Frame"), wxPoint(350, 450));
+    ////panel->Layout();
 
-    // Load and position header image
-    wxImage headerImg(HEADER_IMG, wxBITMAP_TYPE_PNG);
-    if (headerImg.IsOk()) {
-        wxBitmap headerBitmap(headerImg);
-        wxStaticBitmap* headerCtrl = new wxStaticBitmap(panel, wxID_ANY, headerBitmap);
+    ////// Call LoadHeaderFooter after creating the panel and button
 
-        headerCtrl->SetPosition(wxPoint(0, 0));
-    }
-    else {
-        wxLogError("Failed to load header.");
-    }
+    //LoadHeaderFooter(panel);
+}
 
-    // Load and position footer image
-    wxImage footerImg(FOOTER_IMG, wxBITMAP_TYPE_PNG);
-    if (footerImg.IsOk()) {
-        wxBitmap footerBitmap(footerImg);
-        wxStaticBitmap* footerCtrl = new wxStaticBitmap(panel, wxID_ANY, footerBitmap);
-
-        footerCtrl->SetPosition(wxPoint(0, 885));
-    }
-    else {
-        wxLogError("Failed to load footer.");
-    }
-
-    panel->Layout();
+void MainFrame::OnOpenGameFrame(wxCommandEvent& event) {
+    GameFrame* gameFrame = new GameFrame(wxT("Game Frame"));
+    gameFrame->Show(true);
+    Close(true);  // Close the MainFrame
 }

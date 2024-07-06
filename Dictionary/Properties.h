@@ -7,3 +7,4 @@
 #define BLACK wxColour(26, 26, 26)
 #define HEADER_IMG wxT("Resources/Assets/Header.png")
 #define FOOTER_IMG wxT("Resources/Assets/Footer.png")
+#define NAVIGATION_IMG wxT("Resources/Assets/Navigation.png")

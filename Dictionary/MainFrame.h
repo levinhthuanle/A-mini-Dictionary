@@ -1,9 +1,12 @@
 #pragma once
-#include <wx/wx.h>
-#include <wx/statbmp.h>
-#include "Properties.h"
 
-class MainFrame : public wxFrame {
+#include "BaseFrame.h"
+
+class MainFrame : public BaseFrame {
 public:
     MainFrame(const wxString& title);
+
+private:
+    void OnOpenGameFrame(wxCommandEvent& event);
+    wxDECLARE_EVENT_TABLE();
 };

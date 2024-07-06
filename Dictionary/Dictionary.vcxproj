@@ -132,6 +132,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
+    <ClInclude Include="BaseFrame.h" />
+    <ClInclude Include="GameFrame.h" />
     <ClInclude Include="MainFrame.h" />
     <ClInclude Include="Properties.h" />
     <ClInclude Include="SlangWords.h" />
@@ -140,6 +142,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
+    <ClCompile Include="BaseFrame.cpp" />
+    <ClCompile Include="GameFrame.cpp" />
     <ClCompile Include="MainFrame.cpp" />
     <ClCompile Include="SlangWords.cpp" />
     <ClCompile Include="ThemeManager.cpp" />
