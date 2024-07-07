@@ -11,16 +11,18 @@ wxEND_EVENT_TABLE()
 MainFrame::MainFrame(const wxString& title)
     : BaseFrame(title, wxSize(WIDTH, HEIGHT)) {
 
-    //wxPanel* panel = new wxPanel(this);
-    //panel->SetBackgroundColour(WHITE);
+    // Get the panel created in BaseFrame
+    wxPanel* panel = dynamic_cast<wxPanel*>(GetChildren()[0]);
+    if (!panel) {
+        wxLogError("Failed to retrieve the panel from BaseFrame.");
+        return;
+    }
 
-    ////// Create and position the button
-    ////wxButton* openGameButton = new wxButton(panel, ID_OpenGameButton, wxT("Open Game Frame"), wxPoint(350, 450));
-    ////panel->Layout();
+    // Add the button to the panel
+    wxButton* m_button = new wxButton(panel, ID_OpenGameButton, "Click Me", wxPoint(20, 450));
 
-    ////// Call LoadHeaderFooter after creating the panel and button
-
-    //LoadHeaderFooter(panel);
+    // Layout the panel
+    panel->Layout();
 }
 
 void MainFrame::OnOpenGameFrame(wxCommandEvent& event) {
